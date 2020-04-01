@@ -16,7 +16,7 @@ def run(n):
 start_time = time.time()
 t_objs = []
 for i in range(50):
-    t = threading.Thread(target=run,args='t-%s'%i,)
+    t = threading.Thread(target=run,args=('t-%s'%i,))
     #add setdaemon thread
     t.setDaemon(True)
     t.start()
