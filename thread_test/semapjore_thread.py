@@ -11,10 +11,10 @@ import threading,time
 
 
 def run(n):
-    threading.semaphore.acquire()
+    semaphore.acquire()
     time.sleep(1)
     print('run the thread:%s\n'%n)
-    threading.semaphore.release()
+    semaphore.release()
 
 
 if __name__ == '__main__':
